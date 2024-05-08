@@ -8,18 +8,8 @@
   <version>1.0.1</version>
   <dependencies>
     <dependency>
-      <groupId>androidx.appcompat</groupId>
-      <artifactId>appcompat</artifactId>
-      <version>1.2.0</version>
-    </dependency>
-    <dependency>
-      <groupId>com.google.android.material</groupId>
-      <artifactId>material</artifactId>
-      <version>1.2.1</version>
-    </dependency>
-    <dependency>
-      <groupId>com.oze.blusalthorizonpos</groupId>
-      <artifactId>blusalt</artifactId>
+      <groupId>net.blusalt</groupId>
+      <artifactId>blusalthorizonlib</artifactId>
       <version>1.2-4</version>
     </dependency>
   </dependencies>
