@@ -1,3 +1,9 @@
-install: 
-FILE="-Dfile=fp-agency-banking-sdk-release-1.01.aar" 
-mvn install:install-file $FILE -DgroupId=com.group.module -DartifactId=test -Dversion=1.0 -Dpackaging=aar -DpomFile=pom.xml
+# configuration file for building snapshots and releases with jitpack.io
+jdk:
+  - openjdk17
+before_install:
+  - ./scripts/prepareJitpackEnvironment.sh
+install:
+  - FILE="-Dfile=fp-agency-banking-sdk-release-1.01.aar" #com-atifqamar-customtoast.aar 
+  - mvn install:install-file $FILE -DgroupId=com.fountainpay.fpagencybank -DartifactId=latest-release -Dversion=1.0.1 -Dpackaging=aar -DgeneratePom=true
+  #com.github.geek-atif                      #com-atifqamar-customtoast  #1.0
